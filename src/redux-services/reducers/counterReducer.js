@@ -1,11 +1,11 @@
 import { DECREMTNT, INCREMTNT, RESET } from "../constants/counterConstant";
 
 const initialCounter = {
-    counter:0
+    count:0
 }
 
 const counterReducer = (state = initialCounter, action) =>{
-switch (action.typ) {
+switch (action.type) {
     case INCREMTNT:       
         return {
             ...state,
